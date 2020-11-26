@@ -158,13 +158,13 @@ class TransactionViewController: UIViewController {
         if segmentedControlIndex == 0 {
                    
             print("expense is here")
-            let new =  Transaction(id: UUID.init().uuidString, date: currentDate, category: pickedExpenseCategory?.rawValue ?? "", value: -numberTextField.finalValue, name: nameTextField?.text ?? "", icon: pickedExpenseCategory?.systemNameIcon ?? "")
+            let new =  Transaction(id: UUID.init().uuidString, date: currentDate, category: pickedExpenseCategory?.rawValue ?? "", value: -numberTextField.finalValue, name: nameTextField?.text ?? "", icon: pickedExpenseCategory?.systemNameIcon ?? "9")
             print(new)
             RealmManager.shared.addTransaction(new)
             
         } else {
             print("income is here")
-            let new =  Transaction(id: UUID.init().uuidString, date: currentDate, category: pickerIncomeCategory?.rawValue ?? "", value: numberTextField.finalValue, name: nameTextField?.text ?? "", icon: pickerIncomeCategory?.systemNameIcon ?? "")
+            let new =  Transaction(id: UUID.init().uuidString, date: currentDate, category: pickerIncomeCategory?.rawValue ?? "", value: numberTextField.finalValue, name: nameTextField?.text ?? "", icon: pickerIncomeCategory?.systemNameIcon ?? "9")
             print(new)
             RealmManager.shared.addTransaction(new)
         }

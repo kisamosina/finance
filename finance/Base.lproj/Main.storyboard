@@ -74,7 +74,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cp2-Cc-M4s">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="Cp2-Cc-M4s">
                                                     <rect key="frame" x="15" y="11" width="38" height="38"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Cp2-Cc-M4s" secondAttribute="height" multiplier="1:1" id="7fH-xU-RXW"/>
@@ -721,6 +721,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="9" width="80" height="80"/>
         <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
         <image name="chart.pie.fill" catalog="system" width="64" height="62"/>
         <image name="date" width="50" height="50"/>

@@ -19,6 +19,7 @@ enum ExpenseCategory: String, CaseIterable {
     case transportation
     case utilities
     case otherExpense
+    case uncategorized
     
     var systemNameIcon: String {
         switch self {
@@ -30,6 +31,7 @@ enum ExpenseCategory: String, CaseIterable {
         case .transportation: return "6"
         case .utilities: return "7"
         case .otherExpense: return "8"
+        case .uncategorized: return "9"
             
        
         }
@@ -45,6 +47,7 @@ enum ExpenseCategory: String, CaseIterable {
         case .transportation: return UIColor.green
         case .utilities: return UIColor.blue
         case .otherExpense: return UIColor.purple
+        case .uncategorized: return UIColor.black
         }
     }
 }
