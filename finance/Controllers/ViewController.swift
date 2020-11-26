@@ -7,14 +7,11 @@
 //
 
 import UIKit
-import RealmSwift
 
 class ViewController: UIViewController {
     
     var balance: Int?
-    
 
- 
     @IBOutlet weak var tableView: UITableView!
 
     @IBOutlet weak var balanceLabel: UILabel!
@@ -37,12 +34,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        balance = RealmManager.shared.transactions.reduce (0, { result, transaction in
-//            result + transaction.value
-//        })
-        
-//        balanceLabel.text = "\(balance ?? 0) $"
+
         RealmManager.shared.beginUpdate(balanceLabel)
 
         
@@ -61,9 +53,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-       
-       
-        
+
         tableView.reloadData()
   
     }

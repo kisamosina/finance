@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class TransactionViewController: UIViewController {
     
@@ -97,13 +96,8 @@ class TransactionViewController: UIViewController {
         datePicker.isHidden = true
         segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
         segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .touchUpInside)
-        
-//        Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
-//        try? FileManager.default.removeItem(at:Realm.Configuration.defaultConfiguration.fileURL!)
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
-        
-       
+//        print(Realm.Configuration.defaultConfiguration.fileURL!)
 
     }
 //    Manage buttons
@@ -179,21 +173,6 @@ class TransactionViewController: UIViewController {
     }
 
 }
-   
-//extension TransactionViewController {
-//
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "unwindToVC",
-//            let destination = segue.destination as? ViewController {
-//
-//
-//
-//        }
-//    }
-//
-//}
-
-
 
 extension UITextField {
     var finalValue: Int { return Int(self.text ?? "") ?? 0 }
